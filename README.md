@@ -16,7 +16,7 @@ These are my basic setup items I use when building a new website.
 ## Steps run by gitpod
 
 1. Start with prebuilt "workspace-postgresql"
-1. Setups will create a database with the following:
+2. Setups will create a database with the following:
     Item | parameter
     -----|----------
     Database Name | dev-project
@@ -24,6 +24,14 @@ These are my basic setup items I use when building a new website.
     Password | djangodev
 
 ** DO NOT USE ** the above settings in a production project. These are only to be used for development.
+<!-- 杨常佑的翻译，翻译的是上面的英文 -->
+从预构建的 "workspace-postgresql" 开始
+设置过程将会创建一个数据库，具体内容如下：
+项目	参数
+数据库名称	dev-project
+用户名	djangodev
+密码	djangodev
+切记不要在生产环境中使用以上设置，这些配置仅用于开发环境。
 
 
 ## Steps left at finish project
