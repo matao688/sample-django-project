@@ -13,6 +13,18 @@ These are my basic setup items I use when building a new website.
     * React
 * Heroku ready
 
+<!--赵毅负责上面的英文翻译内容-->
+<!--工作区运行的要求
+    下面是我搭建一个新网站所需要的基础配置操作
+       PostgresSQL 数据库部署
+       Python部署
+         DJango 框架
+       Node JS部署
+         React 框架
+    支持Heroku ready部署-->
+
+
+
 ## Steps run by gitpod
 
 1. Start with prebuilt "workspace-postgresql"
@@ -24,14 +36,7 @@ These are my basic setup items I use when building a new website.
     Password | djangodev
 
 ** DO NOT USE ** the above settings in a production project. These are only to be used for development.
-<!-- 杨常佑的翻译，翻译的是上面的英文 -->
-从预构建的 "workspace-postgresql" 开始
-设置过程将会创建一个数据库，具体内容如下：
-项目	参数
-数据库名称	dev-project
-用户名	djangodev
-密码	djangodev
-切记不要在生产环境中使用以上设置，这些配置仅用于开发环境。
+
 
 
 ## Steps left at finish project
