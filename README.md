@@ -3,7 +3,7 @@
 # Pre-built Workspace for My Development
 I needed a workspace I could use to start projects from in Gitpod and I didn't find a existing example done the way I wanted. Please keep in mind that my development is all done as a hobby.
 
-## Requirements for the workspace123
+## Requirements for the workspace123123123
 These are my basic setup items I use when building a new website.
 
 * PostgresSQL database
@@ -40,14 +40,24 @@ These are my basic setup items I use when building a new website.
 
 
 
-## Steps left at finish project
-The enviroment is now ready to start a Django app and React App.
-1. Go to github and create a new repository.
-1. CLI `git remote set-url origin git@github.com:<username>/<new_repo>` or `git remote set-url origin https://github.com/<username>/<new_repo`
-1. CLI `django-admin startproject <project name> .`
-1. CLI `django-admin startapp <app name>`
-1. Change directory <project name> and run `npx create-react-app <react app name>`
-1. Update settings for Django
+<!--全俊召修改---->
+## Steps to Finish the Project
+The environment is now prepared to start both a Django app and a React app. Here are the subsequent steps to complete the project setup.
+
+First, visit GitHub and create a new repository. This will serve as the remote location to store your project's code.
+
+Next, open the Command Line Interface (CLI). You need to set the origin URL of your local Git repository. You have two options based on your authentication preference. If you're using SSH, run the command git remote set-url origin git@github.com:<username>/<new_repo>. If you prefer HTTPS, use git remote set-url origin https://github.com/<username>/<new_repo>.
+
+After that, in the CLI, create a new Django project in the current directory. Use the command django-admin startproject <project name> ..
+
+Once the Django project is created, create a new Django app within it. In the CLI, run django-admin startapp <app name>.
+
+Now, switch to the directory of the newly - created Django project. You can do this by running cd <project name>. Then, initialize a new React application using the command npx create-react-app <react app name>.
+
+Finally, you need to update the Django settings. Usually, this involves making changes to files like settings.py. You'll integrate the new app, configure static files, and set up any necessary middleware in this step.
+<!--全俊召修改---->
+
+
 ```Python
 DATABASE = {
     'default': {
