@@ -5,7 +5,7 @@ I needed a workspace I could use to start projects from in Gitpod and I didn't f
 
 <!--赵毅翻译的内容-->
 
-## Requirements for the workspace123123123
+## Requirements for the workspace
 These are my basic setup items I use when building a new website.
 
 * PostgresSQL database
@@ -57,18 +57,24 @@ Now, switch to the directory of the newly - created Django project. You can do t
 Finally, you need to update the Django settings. Usually, this involves making changes to files like settings.py. You'll integrate the new app, configure static files, and set up any necessary middleware in this step.
 <!--全俊召修改---->
 
+##  Update the Database Configuration in `settings.py`
+<!--卢奕成修改---->
+To connect the Django project to a local PostgreSQL database during development, update the `DATABASES` section in your `settings.py` file as follows:
 
-```Python
-DATABASE = {
+```python
+DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dev-project',
-        'USER': 'djangodev',
-        'PASSWORD': 'djangodev',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',  # Use PostgreSQL as the database backend
+        'NAME': 'dev-project',                                # Name of the PostgreSQL database
+        'USER': 'djangodev',                                  # Database user
+        'PASSWORD': 'djangodev',                              # Database password
+        'HOST': 'localhost',                                  # Host where PostgreSQL is running
+        'PORT': '',                                           # Leave blank to use default PostgreSQL port (5432)
     }
 }
+This configuration is suitable for local development environments
+Note: For production environments, do not hardcode sensitive information like usernames and passwords in settings.py. Instead, use environment variables or a separate configuration management system.       <!--卢奕成修改---->
+
 
 ## References used to build the workspace
 * Gitpod docs
