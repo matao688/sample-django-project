@@ -3,7 +3,8 @@
 # Pre-built Workspace for My Development
 I needed a workspace I could use to start projects from in Gitpod and I didn't find a existing example done the way I wanted. Please keep in mind that my development is all done as a hobby.
 
-## Requirements for the workspace123
+<!--赵毅需要翻译的内容-->
+## Requirements for the workspace
 These are my basic setup items I use when building a new website.
 
 * PostgresSQL database
@@ -13,20 +14,14 @@ These are my basic setup items I use when building a new website.
     * React
 * Heroku ready
 
-<!--赵毅负责上面的英文翻译内容-->
-<!--工作区运行的要求
-    下面是我搭建一个新网站所需要的基础配置操作
-       PostgresSQL 数据库部署
-       Python部署
-         DJango 框架
-       Node JS部署
-         React 框架
-    支持Heroku ready部署-->
+<!--赵毅需要翻译的内容-->
+
+
 
 
 
 ## Steps run by gitpod
-<!-- 杨常佑翻译的内容 -->
+
 1. Start with prebuilt "workspace-postgresql"
 2. Setups will create a database with the following:
     Item | parameter
@@ -36,7 +31,7 @@ These are my basic setup items I use when building a new website.
     Password | djangodev
 
 ** DO NOT USE ** the above settings in a production project. These are only to be used for development.
-<!-- 杨常佑翻译的内容-->
+
 
 
 
