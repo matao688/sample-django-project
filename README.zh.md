@@ -26,6 +26,7 @@
 <!--赵毅需要翻译的内容-->
 
 
+<<<<<<< HEAD
 
 
 <!-- 卢奕成翻译的内容 -->
@@ -49,3 +50,18 @@ DATABASES = {
 
 
 <!-- 卢奕成翻译的内容 -->
+=======
+<!--黄国铭需要翻译的内容-->
+
+完成项目还需的步骤
+现在环境已准备好启动一个 Django 应用程序和 React 应用程序。
+
+1.前往 GitHub 并创建一个新的代码仓库。
+2.使用命令行（CLI）执行 git remote set-url origin git@github.com:<用户名>/<新仓库> 或 git remote set-url origin https://github.com/<用户名>/<新仓库>
+3.使用命令行（CLI）执行 django-admin startproject <项目名称> .
+4.使用命令行（CLI）执行 django-admin startapp <应用名称>
+5.切换目录并运行 npx create-react-app <React应用名称>
+6.更新 Django 的设置
+
+<!--黄国铭需要翻译的内容-->
+>>>>>>> ea4794631cc5552c2b9d5c780cd51084fce98378
