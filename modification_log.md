@@ -42,6 +42,49 @@
     ai翻译中把一些英文翻成了中文，但是一些固定的代码词就没有进行修改，例如python这些固有的英文，因而这样则是直接按照原来的字母写就好了
     
 <!--赵毅的翻译ai修改记录-->
+<<<<<<< HEAD
+    
+<!--卢奕成的翻译流程修改记录-->
+ 更新 settings.py 中的数据库配置（操作流程）
+以下是在开发环境中配置 PostgreSQL 数据库连接的详细操作步骤：
+
+步骤 1：确保已安装 PostgreSQL
+前往 PostgreSQL 官网 下载并安装适用于你系统的版本
+安装过程中设置一个数据库用户（如：djangodev）和数据库（如：dev-project）；
+可使用图形界面工具如 pgAdmin 来管理数据库。
+
+步骤 2：安装 Django 的 PostgreSQL 驱动
+在你的虚拟环境中运行以下命令安装 psycopg2：
+bash
+复制
+编辑
+pip install psycopg2-binary
+⚠️ psycopg2-binary 是推荐用于开发的版本。部署到生产环境时请改用 psycopg2。
+
+步骤 3：修改 settings.py 中的数据库配置
+打开 Django 项目中的 settings.py 文件，找到 DATABASES 配置部分，修改为如下内容：
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',  # 使用 PostgreSQL 作为数据库后端
+        'NAME': 'dev-project',                                # 数据库名称
+        'USER': 'djangodev',                                  # 数据库用户名
+        'PASSWORD': 'djangodev',                              # 用户密码
+        'HOST': 'localhost',                                  # 数据库主机地址（本地）
+        'PORT': '',                                           # 留空则默认使用 5432 端口
+    }
+}
+步骤 4：运行数据库迁移命令
+确保数据库已经创建，然后运行以下命令以应用 Django 的模型迁移：
+python manage.py makemigrations
+python manage.py migrate
+步骤 5：启动开发服务器测试连接
+python manage.py runserver
+如果没有数据库连接错误，即说明配置成功。
+ 温馨提示：
+在生产环境中不要将数据库用户名、密码等敏感信息直接写入 settings.py 文件中。建议使用环境变量、.env 文件或 Django 的 django-environ 等工具进行安全管理。
+<!--卢奕成的翻译流程修改记录-->
+=======
 
 
 
@@ -64,3 +107,4 @@
 <!--黄国铭使用AI进行详细说明-->
 使用al进行翻译时，提前把要翻译的内容自己翻译一遍，然后再进行al翻译，然后进行比较，自己翻译得不够准确的地方选择用al更准确的翻译写进来，然后自己整理出来，让内容通俗易懂，让自己的英语水平提高，在al翻译的时候，al把要翻译的部分又分成几个小支，并且有文字说明，让读者不仅仅是学到新的词汇，还可以拓宽视野，让自己学到更多的知识。
 <!--黄国铭使用AI进行详细说明-->
+>>>>>>> ea4794631cc5552c2b9d5c780cd51084fce98378
