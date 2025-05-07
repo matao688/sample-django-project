@@ -1,7 +1,17 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/sizhky/sample-django-project/)
 
+
+<!--韦俊的修改的内容-->
+
 # Pre-built Workspace for My Development
-I needed a workspace I could use to start projects from in Gitpod and I didn't find a existing example done the way I wanted. Please keep in mind that my development is all done as a hobby.
+I need to look for a pre-configured Gitpod workspace template to quickly launch projects. 
+After conducting extensive searches in Gitpod's public areas, community repositories, 
+and forums, I still haven't found a template that meets my needs. My software development is purely a personal hobby for learning and exercising creativity.
+
+Technical terms related to computers:workspace、Gitpod、projects、Git
+
+<!--韦俊的修改的内容-->
+
 
 <!--赵毅翻译的内容-->
 
