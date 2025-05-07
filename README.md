@@ -40,14 +40,16 @@ These are my basic setup items I use when building a new website.
 
 
 
-## Steps left at finish project
-The enviroment is now ready to start a Django app and React App.
-1. Go to github and create a new repository.
-1. CLI `git remote set-url origin git@github.com:<username>/<new_repo>` or `git remote set-url origin https://github.com/<username>/<new_repo`
-1. CLI `django-admin startproject <project name> .`
-1. CLI `django-admin startapp <app name>`
-1. Change directory <project name> and run `npx create-react-app <react app name>`
-1. Update settings for Django
+<!--全俊召修改---->
+## Steps Remaining to Finish the Project
+1.The development environment is now fully configured and ready for initiating a Django application and a React application. Here are the subsequent steps:
+
+2.Navigate to GitHub and create a new repository.
+In the Command Line Interface (CLI), use one of the following commands to set the origin URL of your local Git repository according to your preference. If you are using SSH authentication, use: git remote set-url origin git@github.com:<username>/<new_repo>. If you prefer using HTTPS, use: git remote set-url origin https://github.com/<username>/<new_repo>.
+
+<!--全俊召修改---->
+
+
 ```Python
 DATABASE = {
     'default': {
