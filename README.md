@@ -41,16 +41,20 @@ These are my basic setup items I use when building a new website.
 
 
 <!--全俊召修改---->
-## Steps Remaining to Finish the Project
-1.The development environment is now fully configured and ready for initiating a Django application and a React application. Here are the subsequent steps:
+## Steps to Finish the Project
+The environment is now prepared to start both a Django app and a React app. Here are the subsequent steps to complete the project setup.
 
-2.Navigate to GitHub and create a new repository.
-In the Command Line Interface (CLI), use one of the following commands to set the origin URL of your local Git repository according to your preference. If you are using SSH authentication, use: git remote set-url origin git@github.com:<username>/<new_repo>. If you prefer using HTTPS, use: git remote set-url origin https://github.com/<username>/<new_repo>.
+First, visit GitHub and create a new repository. This will serve as the remote location to store your project's code.
 
-3.In the Command Line Interface (CLI), execute the command django-admin startproject <project name> . to create a new Django project in the current directory.
-4.In the CLI, run the command django-admin startapp <app name> to generate a new Django application within the project.
-Navigate into the <project name> directory using the appropriate cd command in the terminal, and then run npx create-react-app <react app name> to initialize a new React application.
-Modify the settings in the Django project's settings.py file as per your requirements to configure aspects such as installed apps, database connections, and more.
+Next, open the Command Line Interface (CLI). You need to set the origin URL of your local Git repository. You have two options based on your authentication preference. If you're using SSH, run the command git remote set-url origin git@github.com:<username>/<new_repo>. If you prefer HTTPS, use git remote set-url origin https://github.com/<username>/<new_repo>.
+
+After that, in the CLI, create a new Django project in the current directory. Use the command django-admin startproject <project name> ..
+
+Once the Django project is created, create a new Django app within it. In the CLI, run django-admin startapp <app name>.
+
+Now, switch to the directory of the newly - created Django project. You can do this by running cd <project name>. Then, initialize a new React application using the command npx create-react-app <react app name>.
+
+Finally, you need to update the Django settings. Usually, this involves making changes to files like settings.py. You'll integrate the new app, configure static files, and set up any necessary middleware in this step.
 <!--全俊召修改---->
 
 
