@@ -27,7 +27,84 @@ These are my basic setup items I use when building a new website.
 
 <!--赵毅翻译的内容-->
 
+<!--江桂锦翻译-->
+These are my basic setup items I use when building a new website.
 
+1. Data Persistence Layer
+Database System: PostgreSQL 14+
+
+Must support ACID transaction isolation level ≥ READ COMMITTED
+
+Required extensions:
+
+pg_trgm (fuzzy search optimization)
+
+PostGIS (geospatial data support, if applicable)
+
+2. Server-Side Runtime
+Python 3.10+
+
+Virtual environment management: poetry (replaces traditional pip+venv)
+
+Django 4.2 LTS
+
+Must enable ASGI mode (daphne/uvicorn)
+
+Middleware requirements:
+ 3. Client-Side Runtime
+Node.js 18 LTS (with Corepack enabled)
+
+React 18+
+
+State management: Must use Context API + useReducer (or Redux Toolkit)
+
+Build toolchain:
+
+Bundler: vite (replaces webpack)
+
+CSS solution: CSS Modules + postcss-preset-env
+
+4. Cloud Deployment Standards
+Heroku Compatibility:
+
+Must include:
+
+Procfile (process declaration)
+runtime.txt (Python version specification)
+
+heroku-postbuild script (auto-installs Node dependencies)
+
+Database connection:
+
+Use dj-database-url to parse DATABASE_URL environment variable
+
+5. Development Constraints
+Code quality:
+
+Python must pass mypy static type checking
+
+React components must use TypeScript 5.0+
+
+Security requirements:
+
+Django setting SECURE_HSTS_SECONDS ≥ 63072000
+
+Frontend prohibited from directly storing process.env sensitive variables
+Optimization Highlights
+Performance Optimization:
+
+Vite for HMR (Hot Module Replacement) during development
+
+Django select_related/prefetch_related to prevent N+1 queries
+
+Observability:
+
+Integrate prometheus-client to expose /metrics endpoint
+
+IaC Practice:
+
+Use heroku.yml for declarative deployments
+<!--江桂锦翻译-->
 
 
 
