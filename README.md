@@ -3,6 +3,8 @@
 # Pre-built Workspace for My Development
 I needed a workspace I could use to start projects from in Gitpod and I didn't find a existing example done the way I wanted. Please keep in mind that my development is all done as a hobby.
 
+<!--赵毅翻译的内容-->
+
 ## Requirements for the workspace123123123
 These are my basic setup items I use when building a new website.
 
@@ -13,15 +15,13 @@ These are my basic setup items I use when building a new website.
     * React
 * Heroku ready
 
-<!--赵毅负责上面的英文翻译内容-->
-<!--工作区运行的要求
-    下面是我搭建一个新网站所需要的基础配置操作
-       PostgresSQL 数据库部署
-       Python部署
-         DJango 框架
-       Node JS部署
-         React 框架
-    支持Heroku ready部署-->
+<!--赵毅翻译的内容-->
+
+
+
+
+
+
 
 
 
