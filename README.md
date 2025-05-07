@@ -47,6 +47,10 @@ These are my basic setup items I use when building a new website.
 2.Navigate to GitHub and create a new repository.
 In the Command Line Interface (CLI), use one of the following commands to set the origin URL of your local Git repository according to your preference. If you are using SSH authentication, use: git remote set-url origin git@github.com:<username>/<new_repo>. If you prefer using HTTPS, use: git remote set-url origin https://github.com/<username>/<new_repo>.
 
+3.In the Command Line Interface (CLI), execute the command django-admin startproject <project name> . to create a new Django project in the current directory.
+4.In the CLI, run the command django-admin startapp <app name> to generate a new Django application within the project.
+Navigate into the <project name> directory using the appropriate cd command in the terminal, and then run npx create-react-app <react app name> to initialize a new React application.
+Modify the settings in the Django project's settings.py file as per your requirements to configure aspects such as installed apps, database connections, and more.
 <!--全俊召修改---->
 
 
