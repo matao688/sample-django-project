@@ -65,3 +65,38 @@ DATABASES = {
 
 <!--黄国铭需要翻译的内容-->
 >>>>>>> ea4794631cc5552c2b9d5c780cd51084fce98378
+
+<!--叶正艺需要翻译的内容-->
+## ❓ 常见问题
+
+### 🛠️ 环境配置问题
+**Q1: Gitpod启动后数据库连接失败**  
+出现 `django.db.utils.OperationalError` 错误时：
+1. 确认PostgreSQL服务已启动：
+   ```bash
+   sudo service postgresql status
+   # 若未运行则启动服务
+   sudo service postgresql start
+
+2.验证数据库用户权限：
+psql -U djangodev -d dev-project
+
+###依赖管理问题
+Q2: Poetry安装依赖时版本冲突
+尝试以下步骤：
+
+# 清除旧依赖
+poetry lock --no-update
+poetry install --sync
+# 若需强制更新
+poetry update --dry-run  # 先预览变更
+poetry update
+
+#测试问题
+Q3: 如何运行类型检查？
+项目内置质量门禁：
+# Python类型检查
+poetry run mypy backend/
+# TypeScript类型校验
+npm run type-check  # 需在package.json配置
+<!--叶正艺需要翻译的内容-->

@@ -163,6 +163,41 @@ This configuration is suitable for local development environments
 Note: For production environments, do not hardcode sensitive information like usernames and passwords in settings.py. Instead, use environment variables or a separate configuration management system.       <!--卢奕成修改---->
 
 
+<!--叶正艺修改---->
+❓ Frequently Asked Questions
+🛠️ Environment Configuration Issues
+Q1: Database connection failure after Gitpod startup
+When encountering django.db.utils.OperationalError:
+
+Check if PostgreSQL service is running:
+
+sudo service postgresql status  
+# If not running, start the service  
+sudo service postgresql start  
+Verify database user permissions:
+
+psql -U djangodev -d dev-project  
+Dependency Management Issues
+Q2: Version conflicts during Poetry dependency installation
+Try these steps:
+
+# Remove old dependencies  
+poetry lock --no-update  
+poetry install --sync  
+# If forced update is required  
+poetry update --dry-run  # Preview changes first  
+poetry update  
+Testing Issues
+Q3: How to run type checks?
+Built-in quality gates in the project:
+
+# Python type checking  
+poetry run mypy backend/  
+# TypeScript type validation  
+npm run type-check  (requires configuration in package.json)  
+
+<!--叶正艺修改---->
+
 ## References used to build the workspace
 * Gitpod docs
     * https://www.gitpod.io/docs/
