@@ -100,3 +100,9 @@ poetry run mypy backend/
 # TypeScript类型校验
 npm run type-check  # 需在package.json配置
 <!--叶正艺需要翻译的内容-->
+
+<!--赖源昊需要翻译的内容-->
+预构建的开发工作区
+
+我需要一个可在Gitpod中快速创建项目的预配置工作区（pre-configured workspace），但未找到符合预期的现有模板。请注意，本人的所有开发工作均属业余爱好性质。
+<!--赖源昊需要翻译的内容-->
