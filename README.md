@@ -114,6 +114,21 @@ Backend Performance
 Add Django caching with Redis for high-traffic endpoints (django-redis).
 
 Optimize database indexes for frequent query filters.
+
+Security Enhancements
+Enable CSP headers in Vite/Django to mitigate XSS.
+
+Regularly update dependencies (npm audit, pip check).
+
+CI/CD Pipeline
+Add GitHub Actions for automated testing (unit/e2e) on PRs.
+
+Include a step to validate heroku.yml before deployment.
+
+Documentation
+Add ADRs (Architecture Decision Records) for major changes.
+
+Swagger/OpenAPI for Django REST endpoints.
 <!--江桂锦翻译-->
 
 
