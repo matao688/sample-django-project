@@ -104,6 +104,16 @@ Integrate prometheus-client to expose /metrics endpoint
 IaC Practice:
 
 Use heroku.yml for declarative deployments
+
+Frontend Optimization
+Implement lazy-loading for React/Vue components with React.lazy() or dynamic imports.
+
+Use webpack-bundle-analyzer to identify and reduce large dependencies.
+
+Backend Performance
+Add Django caching with Redis for high-traffic endpoints (django-redis).
+
+Optimize database indexes for frequent query filters.
 <!--江桂锦翻译-->
 
 
