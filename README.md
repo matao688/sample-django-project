@@ -107,6 +107,18 @@ Use heroku.yml for declarative deployments
 <!--江桂锦翻译-->
 
 
+## Steps run by gitpod
+<!-- 马韬修改的内容 -->
+1. Start with prebuilt "workspace-postgresql"
+2. Setups will create a database with the following:
+    Item | parameter
+    -----|----------
+    Database Name | dev-project
+    Username | djangodev
+    Password | djangodev
+
+** DO NOT USE ** the above settings in a production project. These are only to be used for development.
+<!-- 马韬修改的内容-->
 
 
 
