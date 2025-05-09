@@ -69,6 +69,19 @@
 | ENGINE (SQLite)     | SQLite引擎        | `settings.py`  | `'ENGINE': 'django.db.backends.sqlite3'`   |
 
 
+## 云服务与工具
+
+| 英文术语 | 中文对照             | 对应文件       | 具体位置                     |
+
+|----------|----------------------|----------------|------------------------------|
+
+| Gitpod   | Gitpod               | .gitpod.yml, README.md | 工作区配置和文档说明 |
+
+| Heroku   | Heroku               | README.md      | 项目需求中提及（尚未实现）   |
+
+| SSH      | 安全外壳协议         | Git命令        | 克隆仓库时的协议选项         |
+
+| HTTPS    | 超文本传输安全协议   | Git命令        | 克隆仓库时的协议选项         |
 
 
 
